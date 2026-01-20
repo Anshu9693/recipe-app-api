@@ -10,7 +10,7 @@ app.use(cors());
 
 app.use(express.json());
 
-app.get('/api', (req,res)=>{
+app.get('/', (req,res)=>{
     res.status(200).send('API is working perfectly').json({success:true, message:'Welcome to the Food App API'});
 });
 
