@@ -11,9 +11,13 @@ app.use(cors());
 
 app.use(express.json());
 
-app.get('/', (req,res)=>{
-    res.status(200).send('API is working perfectly').json({success:true, message:'Welcome to the Food App API'});
+app.get('/', (req, res) => {
+  return res.status(200).json({
+    success: true,
+    message: "API is working perfectly"
+  });
 });
+
 
 
 app.post("/api/favorites", async (req, res) => {
